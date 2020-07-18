@@ -25,23 +25,20 @@ Criar um aplicativo de compras, consultar a [API](https://private-3efa8-products
   * Deve permitir a exclusão de um produto do carrinho
   * A cada alteração deve ser atualizado o valor total da compra
 
-### **OBS** ###
+### **Ganha pontos se conter** ###
 
-A foto do mockup é meramente ilustrativa.
 
 ### **Processo de submissão** ###
 
-O candidato deverá implementar a solução e enviar um pull request para este repositório com a solução.
+Para entregá-lo você deverá criar um fork desse repositório e implementar a sua solução nele. **Fique ligado:** Esperamos que ele seja *PRODUCTION READY*, então coloque todas as boas práticas que você estiver acostumado!
 
-O processo de Pull Request funciona da seguinte maneira:
+Importante: Faça um **README** com pelo menos as instruções básicas como:
+- Como rodar localmente?
+- Como rodar os testes?
+- Como fazer o deploy?
 
-1. Candidato fará um fork desse repositório (não irá clonar direto!)
-2. Fará seu projeto nesse fork.
-3. Commitará e subirá as alterações para o __SEU__ fork.
-4. Pela interface do Bitbucket, irá enviar um Pull Request.
+Prezamos muito por documentação, então capricha nessa parte.
 
-Se possível deixar o fork público para facilitar a inspeção do código.
+Quando terminar o desafio, avisa pra gente! Basta enviar o link do seu repositório por e-mail para a pessoa resposável.
 
-### **ATENÇÃO** ###
-
-Não se deve tentar fazer o PUSH diretamente para ESTE repositório!
+### **Bom teste!** ###
