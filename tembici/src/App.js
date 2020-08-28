@@ -7,32 +7,28 @@ import {
   Link
 } from "react-router-dom";
 import HomeProducts from './pages/products-home';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import cartReducer from './redux/cart-reducer';
-
-const store = createStore(cartReducer)
+import Cart from './pages/cart';
+import { HOME_PAGE, CART_PAGE, TOP_FIVE } from './routes';
 
 class App extends Component {
   render() {
     return (
-      <div >
-        <Provider store={store}>
-          <Router>
-            <MenuBar />
+        <Router>
+          <MenuBar />
+          <div className="container">
             <Switch>
-              <Route path="/">
-                <HomeProducts />
+              <Route exact path={HOME_PAGE}>
+                <HomeProducts topFive={false}/>
+              </Route>              
+              <Route exact path={TOP_FIVE}>
+                <HomeProducts topFive={true}/>
               </Route>
-              <Route path="/top-5">
-              </Route>
-              <Route path="/cart">
-
+              <Route exact path={CART_PAGE}>
+                <Cart />
               </Route>
             </Switch>
-          </Router>
-        </Provider>
-      </div >
+          </div >
+        </Router>
     );
   }
 }

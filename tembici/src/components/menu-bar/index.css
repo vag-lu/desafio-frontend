@@ -1,0 +1,9 @@
+.cart-link {
+    color: white;
+}
+
+.cart-qty {
+    color: red;
+    display: inline-block;
+    margin-left: 5px;
+}
